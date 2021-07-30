@@ -13,8 +13,7 @@
 
 'use strict';
 
-async function main() {
-
+async function main(projectId = 'my-project') {
   // [START nodejs_iap_quickstart]
   // Imports the Google Cloud client library
 
@@ -22,21 +21,18 @@ async function main() {
   // eslint-disable-next-line node/no-missing-require
   const {IdentityAwareProxyOAuthServiceClient} = require('@google-cloud/iap');
 
-  // TODO(developer): replace with your prefered project ID.
   // const projectId = 'my-project'
 
   // Creates a client
-  // eslint-disable-next-line no-unused-vars
-  const client = new {IdentityAwareProxyOAuthServiceClient}();
+  const client = new IdentityAwareProxyOAuthServiceClient();
 
-  //TODO(library generator): write the actual function you will be testing
-  async function doSomething() {
-   console.log('DPE! Change this code so that it shows how to use the library! See comments below on structure.')
-   // const [thing] = await client.methodName({
-   // });
-   // console.info(thing);
+  async function listBrands() {
+    const [brands] = await client.listBrands({
+      parent: `projects/${projectId}`,
+    });
+    console.info(brands);
   }
-  doSomething();
+  listBrands();
   // [END nodejs_iap_quickstart]
 }
 
