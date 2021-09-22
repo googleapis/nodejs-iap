@@ -339,6 +339,10 @@ export class IdentityAwareProxyAdminV1Beta1Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.setIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1beta1/identity_aware_proxy_admin_v1_beta1.set_iam_policy.js</caption>
+   * region_tag:iap_set_iam_policy_sample
+   *
    */
   setIamPolicy(
     request?: protos.google.iam.v1.ISetIamPolicyRequest,
@@ -429,6 +433,10 @@ export class IdentityAwareProxyAdminV1Beta1Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1beta1/identity_aware_proxy_admin_v1_beta1.get_iam_policy.js</caption>
+   * region_tag:iap_get_iam_policy_sample
+   *
    */
   getIamPolicy(
     request?: protos.google.iam.v1.IGetIamPolicyRequest,
@@ -523,6 +531,10 @@ export class IdentityAwareProxyAdminV1Beta1Client {
    *   for more details and examples.
    * @example
    * const [response] = await client.testIamPermissions(request);
+   *
+   * @example <caption>include:samples/generated/v1beta1/identity_aware_proxy_admin_v1_beta1.test_iam_permissions.js</caption>
+   * region_tag:iap_test_iam_permissions_sample
+   *
    */
   testIamPermissions(
     request?: protos.google.iam.v1.ITestIamPermissionsRequest,

@@ -341,6 +341,10 @@ export class IdentityAwareProxyAdminServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.setIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_admin_service.set_iam_policy.js</caption>
+   * region_tag:iap_set_iam_policy_sample
+   *
    */
   setIamPolicy(
     request?: protos.google.iam.v1.ISetIamPolicyRequest,
@@ -431,6 +435,10 @@ export class IdentityAwareProxyAdminServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_admin_service.get_iam_policy.js</caption>
+   * region_tag:iap_get_iam_policy_sample
+   *
    */
   getIamPolicy(
     request?: protos.google.iam.v1.IGetIamPolicyRequest,
@@ -523,6 +531,10 @@ export class IdentityAwareProxyAdminServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.testIamPermissions(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_admin_service.test_iam_permissions.js</caption>
+   * region_tag:iap_test_iam_permissions_sample
+   *
    */
   testIamPermissions(
     request?: protos.google.iam.v1.ITestIamPermissionsRequest,
@@ -608,6 +620,10 @@ export class IdentityAwareProxyAdminServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIapSettings(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_admin_service.get_iap_settings.js</caption>
+   * region_tag:iap_get_iap_settings_sample
+   *
    */
   getIapSettings(
     request?: protos.google.cloud.iap.v1.IGetIapSettingsRequest,
@@ -698,6 +714,10 @@ export class IdentityAwareProxyAdminServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateIapSettings(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_admin_service.update_iap_settings.js</caption>
+   * region_tag:iap_update_iap_settings_sample
+   *
    */
   updateIapSettings(
     request?: protos.google.cloud.iap.v1.IUpdateIapSettingsRequest,

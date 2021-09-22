@@ -358,6 +358,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.listBrands(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.list_brands.js</caption>
+   * region_tag:iap_list_brands_sample
+   *
    */
   listBrands(
     request?: protos.google.cloud.iap.v1.IListBrandsRequest,
@@ -450,6 +454,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createBrand(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.create_brand.js</caption>
+   * region_tag:iap_create_brand_sample
+   *
    */
   createBrand(
     request?: protos.google.cloud.iap.v1.ICreateBrandRequest,
@@ -534,6 +542,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getBrand(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.get_brand.js</caption>
+   * region_tag:iap_get_brand_sample
+   *
    */
   getBrand(
     request?: protos.google.cloud.iap.v1.IGetBrandRequest,
@@ -631,6 +643,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createIdentityAwareProxyClient(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.create_identity_aware_proxy_client.js</caption>
+   * region_tag:iap_create_identity_aware_proxy_client_sample
+   *
    */
   createIdentityAwareProxyClient(
     request?: protos.google.cloud.iap.v1.ICreateIdentityAwareProxyClientRequest,
@@ -735,6 +751,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIdentityAwareProxyClient(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.get_identity_aware_proxy_client.js</caption>
+   * region_tag:iap_get_identity_aware_proxy_client_sample
+   *
    */
   getIdentityAwareProxyClient(
     request?: protos.google.cloud.iap.v1.IGetIdentityAwareProxyClientRequest,
@@ -839,6 +859,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.resetIdentityAwareProxyClientSecret(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.reset_identity_aware_proxy_client_secret.js</caption>
+   * region_tag:iap_reset_identity_aware_proxy_client_secret_sample
+   *
    */
   resetIdentityAwareProxyClientSecret(
     request?: protos.google.cloud.iap.v1.IResetIdentityAwareProxyClientSecretRequest,
@@ -944,6 +968,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteIdentityAwareProxyClient(request);
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.delete_identity_aware_proxy_client.js</caption>
+   * region_tag:iap_delete_identity_aware_proxy_client_sample
+   *
    */
   deleteIdentityAwareProxyClient(
     request?: protos.google.cloud.iap.v1.IDeleteIdentityAwareProxyClientRequest,
@@ -1059,6 +1087,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.list_identity_aware_proxy_clients.js</caption>
+   * region_tag:iap_list_identity_aware_proxy_clients_sample
+   *
    */
   listIdentityAwareProxyClients(
     request?: protos.google.cloud.iap.v1.IListIdentityAwareProxyClientsRequest,
@@ -1138,6 +1170,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.list_identity_aware_proxy_clients.js</caption>
+   * region_tag:iap_list_identity_aware_proxy_clients_sample
+   *
    */
   listIdentityAwareProxyClientsStream(
     request?: protos.google.cloud.iap.v1.IListIdentityAwareProxyClientsRequest,
@@ -1151,7 +1187,8 @@ export class IdentityAwareProxyOAuthServiceClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listIdentityAwareProxyClients'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listIdentityAwareProxyClients.createStream(
       this.innerApiCalls.listIdentityAwareProxyClients as gax.GaxCall,
@@ -1196,6 +1233,10 @@ export class IdentityAwareProxyOAuthServiceClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1/identity_aware_proxy_o_auth_service.list_identity_aware_proxy_clients.js</caption>
+   * region_tag:iap_list_identity_aware_proxy_clients_sample
+   *
    */
   listIdentityAwareProxyClientsAsync(
     request?: protos.google.cloud.iap.v1.IListIdentityAwareProxyClientsRequest,
@@ -1210,7 +1251,8 @@ export class IdentityAwareProxyOAuthServiceClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listIdentityAwareProxyClients'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listIdentityAwareProxyClients.asyncIterate(
       this.innerApiCalls['listIdentityAwareProxyClients'] as GaxCall,
